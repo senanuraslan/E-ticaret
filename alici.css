@@ -1,0 +1,69 @@
+.container{
+    background-color:rgb(243, 227, 197);
+}
+.urunler  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1.5fr));
+    gap:1.5rem;
+    border-radius: 25px;
+    margin-bottom: 95px;
+    margin-right: 130px;
+}
+.urunler .box {
+    padding: 4rem;
+    background-color:white; 
+    border-radius: 3rem;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: auto;
+
+}
+.urunler .box img {
+    width: 100%;
+    object-fit: cover;  
+    background-color: #FFF1FF ;
+}
+.urunler .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.filtre{
+    /*gap: 3rem;*/
+    /*flex-direction: column;*/
+    padding: 1rem 1rem;
+    background-color: var(--black-color);
+    border-radius: 3rem;
+    /*align-content: space-between;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: auto;*/
+    margin: 0 auto;
+    width:195px;
+    margin-bottom: 95px;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    cursor: pointer;
+    
+}
+.filtre .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem; /*yukardan aşağı sağdan sola genişlettik*/
+    border-radius:30rem;
+    font-size: 1.7rem;
+    color:var(--text-color); 
+    background-color: white;
+    cursor:pointer;
+}
+.container2{ /*yanyana koymak için*/
+    display: grid;
+    grid-template: auto / 230px 1200px;
+    margin:2rem 7%;
+}
+
+

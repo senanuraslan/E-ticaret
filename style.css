@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,100;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+    font-family: 'Poppins', sans-serif; 
+}
+:root{
+    --main-color: white;
+    --black-color: #c2725b;
+    --border:01rem solid rgba(255,255,255);
+    --text-color:black;
+}
+html{
+    font-size: 62.5%; /*artık pixcel ve rem oranını eşitledim normalde 1rem=16px eder*/
+    overflow-x:hidden; /*homecar.jpg için yaptık anlamadım*/
+    scroll-padding-top:smooth;
+}
+body{
+    background-color:#ffe4c4;
+}
+.container .home{
+padding: 3.5rem 7%;
+}
+.home .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 4rem; /*yukardan aşağı sağdan sola genişlettik*/
+    border-radius:30rem;
+    font-size: 2.7rem;
+    color:var(--text-color);
+    background-color: var(--black-color);
+    cursor:pointer;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 1rem; /*yukardan aşağı sağdan sola genişlettik*/
+    border-radius:30rem;
+    font-size: 1.7rem;
+    color:var(--text-color);
+    background-color: var(--black-color);
+    cursor:pointer;
+}
+
+/************ header section start **************/
+.header .logo img{ /* homecar resmin boyutunu ayarlamak için */
+    width: 90px; 
+    height: 90px;
+}
+.header{
+    background-color:#c2725b;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%; /*yükseklik sıfır yanlarda %7 boşluk*/
+    margin:2rem 7%;
+    border-radius:30rem;
+    /* box-shadow: 0px 0px 17px -2px black; */
+    position:sticky;
+    top:0;  /*headerın sayafa açağıya kaydırdığında yukardaki marjin boşluğun bitmesini sağlıyor*/
+    z-index: 1000; /*headerin önüne birşey gelmesin hep önde olsun diye*/
+}
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border-bottom: 0.1rem solid transparent; /*yazıların altındaki çizginin gelmesini sağlıyor*/
+}
+.header .navbar a:hover{
+    border-color:var(--black-color);
+    padding-bottom:0.5rem;  
+}
+.header .buttons button{
+    cursor:pointer;
+    font-size: 2.5rem;
+    margin-left:2rem ;
+    background-color: transparent;
+}
+.header .search-form{
+    position:absolute;
+    top: 115%;
+    right: 7%;
+    background-color: white;
+    width: 50rem;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0); /*search ekranının yok olmasını sağlıyor*/
+    border-radius: 3rem;
+    /* box-shadow: 0px 0px 25px 2px rgb(0 0 0/75%); */
+}
+.header .search-form.active{
+    transform: scaleY(1); /*searc ekranın geri gelmesini aktif edeceğiz*/
+}
+.header .search-form i{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right:1.5rem;  
+}
+.header .search-form input{
+    width: 100%;
+    margin-left: 25px;
+    
+}
+.header .cart-items-container{
+    position:absolute;
+    top: 95%;
+    height: calc(100vh - 9rem);
+    width: 35rem;
+    background-color:white;
+    box-shadow: 0px 0px 25px 2px rgb(0 0 0/75%);
+    right: -100%; /*aktiflikten çıkacak*/
+}
+.header .cart-items-container.active{
+    right: 3rem;
+}
+
+.header .cart-items-container .cart-item{
+    position:relative;
+    display: flex;
+    gap:1.5rem;
+    padding: 1.5rem;   
+}
+.header .cart-items-container .cart-item:hover{
+    box-shadow:0px 0px 25px 2px rgb(0 0 0/75%); 
+}
+.header .cart-items-container .cart-item img{
+    height: 7rem; 
+}
+.header .cart-items-container .cart-item .content .pice{
+   font-size:2rem;
+   color:var(--black-color);
+   padding-bottom: 0.5rem;
+}
+.header .cart-items-container .cart-item .content h3{
+    font-size:1.5rem;
+    color:var(--black-color);
+ }
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor:pointer;
+    color: var(--black-color);
+}
+.cart-items-container .btn{
+    width: 100%;
+    text-align:center;
+    border-radius: unset;
+
+}
+/************ header section end **************/
+
+/************ home start **************/
+.home{
+    min-height: 100vh; /*home resminin ilk açtığında her yeri kaplayan alan*/
+    /* background:url(pictures/logo.png) no-repeat; */
+    background-color: #ffe4c4;
+    background-size: cover;
+    background-position:center;
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center; /*ögeleri merkeze hizala*/
+}
+.container .home h2{
+    font-size: 60px;
+    color:  black;
+}
+.container .home p{
+    font-size: 25px;
+}
+
+/************************************ footer***************************/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    background-color: #a6a6a6;
+    grid-template:20px / 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+   
+}
+.center {
+    padding: 18rem 7%;
+}
+.choice-container {
+    padding: 3.5rem 7%;
+}
+#question{
+    padding: 3.5rem 7%;
+}
+/*********************form uye ekrani icin******************/
+#f1 {
+    align-items: center;
+    border-style: dashed;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

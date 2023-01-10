@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- logoları kullanabilmek için linki ekledik -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>bebekarabam.com</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <!-- header section start -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="pictures/logo.png">
+        </a>
+        <!-- <h1>bebek Arabam</h1> -->
+      </div>
+      <nav class="navbar">
+        <a href="index.html"><b>Ana Sayfa</b></a>
+        <a href="hakkimizda.html"><b>Hakkımızda</b></a>
+        <a href="hizmetler.html"><b>Hizmetler</b></a>
+        <a href="iletisim.html"><b>İletişim</b></a>
+      </nav>
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="cart-btn">
+          <i class=" fas fa-shopping-cart"></i>
+        </button>
+        <button id="sign-btn">
+          <i class="fas fa-sign-in/sign-up"></i> <!-- uye ol ekran dugmesi-->
+        </button>
+      </div>
+      <div class="search-form"> <!-- active ile search butonu aktif et sonradan js kullanılacak-->
+        <input 
+        type="text" 
+        class="search-input"
+        id="search-box"
+        placeholder="search-here"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <i class="fas-fa-times"></i>
+          <img src="pictures/araba2-hamilton.jpg" alt="araba">
+          <div class="content">
+            <h3>arabam 1</h3>
+            <div class="price">988 TL</div>
+          </div>
+        </div>
+        <a href="#" class="btn">ödeme yap</a>
+      </div>
+    </header>
+    <!-- header section end -->
+    
+    <!-- home section start -->
+    <section class="home">
+      <div class="center">
+      <h2>Hoşgeldiniz</h2>
+      <br><br><br><br><br>
+      <p><b>Cocugunuzun ilk tahtı</b></p><br><br><br><br><br> <!-- yaziyi kalinlastirdim-->
+      <div class="Buttons">
+      <a href="alici.html" class="btn">Alıcı</a>
+      <a href="satici.html" class="btn">Satıcı</a>
+      <a href="bebekarabamuyeolekrani.html" class="btn">Giriş</a>
+      </div>
+      </div>
+    </section>
+    <!-- home section end -->
+  </div>
+    <!-- footer section start -->
+<script src="script.js"> </script>
+</body>
+<footer>   
+  <p>İletişim Telefon : 0 212 555 55 55</p>
+  <p >Mail Adresi : bebekarabam@gmail.com</p>  
+  <p>Twitter : @bebekarabam</p>
+  <p>Instagram : bebekarabam</p>  
+  <p>Tüm Hakları Saklıdır.</p>
+</footer>
+</html>
